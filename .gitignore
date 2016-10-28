@@ -1,3 +1,7 @@
-wwwroot/*.js
 node_modules
+dist
 typings
+*.tgz
+index.js
+index.min.js
+npm-debug.log
