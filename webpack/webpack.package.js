@@ -21,7 +21,7 @@ module.exports = {
     },
 	output: {
 		filename: '[name].js',
-		library: 'hostme-sdk-angular2-mobile',
+		library: 'hostme-sdk-angular2-admin',
 		libraryTarget: 'umd'
     },
 	plugins: [		
