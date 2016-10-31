@@ -1,4 +1,4 @@
-## hostme-sdk-angular2-mobile
+## hostme-sdk-angular2-admin
 
 ### Building
 
@@ -19,7 +19,7 @@ navigate to the folder of your consuming project and run one of next commando's.
 _published:_
 
 ```
-npm install hostme-sdk-angular2-mobile --save
+npm install hostme-sdk-angular2-admin --save
 ```
 
 _unPublished (not recommended):_
@@ -36,9 +36,11 @@ TODO: paste example.
 If different than the generated base path, during app bootstrap, you can provide the base path to your service. 
 
 ```
-import { BASE_PATH } from './path-to-swagger-gen-service/index';
+import { Configuration } from 'hostme-sdk-angular2-admin';
+
+const configurationFactory = () => { return new Configuration('https://your-web-service.com'); };
 
 bootstrap(AppComponent, [
-    { provide: BASE_PATH, useValue: 'https://your-web-service.com' },
+    { provide: Configuration, useFactory: configurationFactory },
 ]);
 ```  
