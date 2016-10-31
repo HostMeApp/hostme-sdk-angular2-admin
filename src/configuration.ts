@@ -1,3 +1,6 @@
+import { Injectable }   from '@angular/core';
+
+@Injectable()
 export class Configuration {
     public basePath: string = 'http://hostme-services-qa.azurewebsites.net';
 
